@@ -1,0 +1,31 @@
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#14a883;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F8F9FA;
+}
+  
+li{
+    float: left;
+    font-size: 18px;
+}
+  
+li a {
+    display: block;
+    color: #34b7a7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #e4e4e4;
+}
