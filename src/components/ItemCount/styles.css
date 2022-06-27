@@ -1,0 +1,19 @@
+.contador {
+    width: fit-content;
+    background-color: #c1bebe;
+    margin: 50px;
+    padding:20px;
+}
+.contador div{
+    padding-top: 20px;
+}
+button{
+    background-color: #34b7a7;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+}
+h2{
+    text-transform: uppercase;
+}
