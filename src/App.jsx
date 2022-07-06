@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <NavBar/>
       {/*<ItemListContainer greeting= 'Bienvenido a Green Lif'/>*/}
-      <ItemDetailContainer/>
+     <ItemDetailContainer id={1}/>
     </div>
   );
 }

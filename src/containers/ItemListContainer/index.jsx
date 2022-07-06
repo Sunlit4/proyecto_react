@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import ItemList from '../../components/ItemList/ItemList';
+import ItemList from '../../components/ItemList';
 import './styles.css';
 
 const ItemListContainer = ({greeting}) => {
 
     const [productos, setProductos] = useState (null);
-   
+
     useEffect(() => {
+
         const getProductos = async () =>{
             try {
                 const response = await fetch('/mocks/data.json');
@@ -27,12 +28,13 @@ const ItemListContainer = ({greeting}) => {
         <div>
             <h1>{greeting}</h1>,
             {productos ? 
-                <ItemList products={productos}/>
+                <ItemList products={productos} />
                 :
                 null
             }   
         </div>
     )
 }
+
 
 export default ItemListContainer
