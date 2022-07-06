@@ -5,7 +5,7 @@ import './styles.css';
 const NavBar = () => {
     return (
         <ul>
-            <li><a className="logo" href= "#home">GREEN LIF | Tienda Sustentable</a></li>
+            <li><a className="logo" href= "#home">SUPER TECH</a></li>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#news">Productos</a></li>
             <li><a href="#contact">Nosotros</a></li>

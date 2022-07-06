@@ -1,24 +1,24 @@
 import React, {useEffect, useState} from 'react'
 import ItemDetail from '../../components/ItemDetail'
 
-const ItemDetailContainer = ({id}) => {
-    const [productDetail, setProductos] = useState ({});
+
+const ItemDetailContainer = () => {
+    const [productDetail, setProductDetail] = useState ({});
     useEffect (()=>{
             const getProductos = async () =>{
                 try {
-                    const response = await fetch ('/mocks/data.json');
+                    const response = await fetch ('https://fakestoreapi.com/products/5');
                     const data = await response.json();
                     console.log(data)
-                    setProductos(data)
-                    
+                    setProductDetail(data)
                 } catch (error){
                     console.log ('Hubo un error')
                 }     
             }
             getProductos()
-        },[id])
+        },[])
     return (
-           <ItemDetail products={productDetail}/>
+           <ItemDetail product={productDetail}/>
     )
 }
 

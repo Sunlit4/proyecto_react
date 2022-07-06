@@ -1,18 +1,17 @@
 import React from "react";
 import './styles.css';
-import Card from "react-bootstrap/Card";
-
 
 const Item = ({product}) => {
     return (
-       <Card className="card">
-            <Card.Img className="img" variant="top" src={product.picture}/>
-            <Card.Body>
-               <Card.Title>{product.title}</Card.Title> 
-               <Card.Text> Categoria: {product.category}</Card.Text>
-               <span>$ {product.price} </span>
-            </Card.Body>
-    </Card>
+      <article className="containerCard">
+         <div className="card">
+            <img className="img" src={product.image}/>
+            <h3>{product.title}</h3> 
+            <h4> Categoria: {product.category}</h4>
+            <p>Marca: {product.brand}</p>
+            <p><span>$ {product.price} </span></p>
+         </div>
+      </article>
        
     )
 }
