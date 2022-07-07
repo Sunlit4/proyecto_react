@@ -1,4 +1,3 @@
-
 import './styles.css';
 import React, {useState} from 'react';
 
@@ -21,9 +20,8 @@ const ItemCount = ({initial, stock, onAdd}) => {
                 </button>
             </div>
         
-
             <button disabled={stock === 0} onClick={() => onAdd (count)}>
-                Agregar al carrito
+                Add to cart
             </button>
         </div>
     )
