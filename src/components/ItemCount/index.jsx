@@ -1,27 +1,31 @@
 import './styles.css';
 import React, {useState} from 'react';
 
-const ItemCount = ({initial, stock, onAdd}) => {
-    const [count, setCount] = useState(initial);
+const ItemCount = ({onConfirm, maxQuantity}) => {
+    const [value, setValue] = useState(1);
 
-    const addProduct = (num) =>{
-        setCount(count + num)
+    const handleConfirm = () =>{
+        if(value <= maxQuantity){
+            onConfirm(value);
+        }else{
+            alert("Lo sentimos, no hay suficiente stock para este producto.")
+        }
     };
 
     return (
         <div className="contadorContainer">
             <div className="contadorChild">
-                <button disabled={count === initial} onClick={() => addProduct(-1)}>
+                <button disabled={value === 1} onClick={() => setValue(value => value-1)}>
                     -
                 </button>
-                <span>{count}</span>
-                <button disabled={count === stock} onClick={() => addProduct (+1)}>
+                <span>{value}</span>
+                <button onClick={() => setValue (value => value+1)}>
                     +
                 </button>
             </div>
         
-            <button disabled={stock === 0} onClick={() => onAdd (count)}>
-                Add to cart
+            <button onClick={handleConfirm}>
+                Confirm
             </button>
         </div>
     )

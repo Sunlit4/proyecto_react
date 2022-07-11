@@ -1,14 +1,8 @@
 import React from "react";
 import './styles.css';
 import { Link } from "react-router-dom";
-import ItemCount from "../ItemCount"
 
 const Item = ({product}) => {
-
-   const onAdd = (quantity) =>{
-      console.log(`Se agrego el producto (${quantity}) al carrito`)
-  }
-
     return (
       <div className="container">
          <div className="card">
@@ -21,7 +15,6 @@ const Item = ({product}) => {
                </h3>
             
             <p><span>US$ {product.price} </span></p> 
-            <ItemCount onAdd={onAdd} initial={1} stock={8}/>
          </div>
       </div>
     )

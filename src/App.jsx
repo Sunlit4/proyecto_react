@@ -4,7 +4,8 @@ import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import NotFound from './components/NotFound';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
+import Cart from './containers/Cart';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
             <Route path='/category/:categoryId' element={<ItemListContainer/>}></Route>
             <Route path='/detail/:productId' element={<ItemDetailContainer/>}></Route>
             <Route path='*' element={<NotFound/>}></Route>
+            <Route path='/cart' element={<Cart/>}></Route>
           </Routes>
-          <Footer/>
+         {/*<Footer/>*/}
         </div>
       </BrowserRouter>
   );
