@@ -9,7 +9,7 @@ const ItemList = ({products}) => {
                     return <Item product={producto} 
                             key={producto.id} />
                 })}
-            </CardGroup>
+            </CardGroup>  
     )
 }
 

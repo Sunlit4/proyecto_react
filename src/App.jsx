@@ -6,9 +6,11 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import NotFound from './components/NotFound';
 //import Footer from './components/Footer';
 import Cart from './containers/Cart';
+import ShopProvider from './context/ShopContext';
 
 function App() {
   return (
+    <ShopProvider>
       <BrowserRouter>
         <div className="App">
           <NavBar/>
@@ -22,6 +24,7 @@ function App() {
          {/*<Footer/>*/}
         </div>
       </BrowserRouter>
+    </ShopProvider>
   );
 }
 
