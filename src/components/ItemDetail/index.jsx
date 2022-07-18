@@ -39,7 +39,7 @@ const ItemDetail = ({product}) => {
                     {!qtyAdded ?
                     <ItemCount onConfirm={handleConfirm} maxQuantity={product.stock}/>
                     :
-                    <button onClick={handleTerminate}>Terminar compra</button>
+                    <button onClick={handleTerminate}>Add to Cart</button>
                     } 
                 </div>
             </div>      

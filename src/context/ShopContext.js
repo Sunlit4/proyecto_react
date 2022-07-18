@@ -28,15 +28,25 @@ const ShopProvider = ({children}) => {
 
     //Remover item del carrito
     const removeItem = (id) => setCart (cart.filter (producto => producto.id !== id));
-  
+
+    // Total de la compra
+    const totalPrice = () => {
+        return cart.reduce((acumulador, producto) => acumulador + producto.quantity * producto.price, 0);
+    }
+    
     //Vaciar carrito 
-    const clearCart = () => setCart ([])
+    const clearCart = () => setCart ([]);
+
+    //Cantidad total de productos
+    const cartWidgetItems = () =>cart.reduce ((acum, valor) => acum + valor.quantity, 0);
 
     return (
         <Shop.Provider value={{
             addItem, 
             removeItem, 
             clearCart, 
+            totalPrice,
+            cartWidgetItems,
             cart
         }}>
             {children}

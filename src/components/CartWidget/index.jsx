@@ -5,12 +5,22 @@ import { Shop } from '../../context/ShopContext';
 import './styles.css';
 
 const CartWidget = () => {
-    const {cart} = useContext(Shop);
+    const {cart, cartWidgetItems} = useContext(Shop);
+    console.log (cart)
 
     return (
         <div className="carrito">
             <FaShoppingCart size={32} />
-            {cart.length && <span>({cart.length})</span>}
+            {cartWidgetItems()>0 ? (
+                <>
+                    {cartWidgetItems()}
+                </>
+            ) : (
+                <>
+                {''}
+                </> 
+            )
+        }
         </div>
         
     )
