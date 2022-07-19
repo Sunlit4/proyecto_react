@@ -34,7 +34,7 @@ const ItemDetail = ({product}) => {
                     <h4>Detalle</h4>
                     <p>{product.description}</p>
                     <strong className="infoGrid">
-                    Price: US$ {product.price}
+                    Price: $ {product.price}
                     </strong>
                     {!qtyAdded ?
                     <ItemCount onConfirm={handleConfirm} maxQuantity={product.stock}/>

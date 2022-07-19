@@ -14,7 +14,7 @@ const Item = ({product}) => {
                   </Link>
                </h3>
             
-            <p><span>US$ {product.price} </span></p> 
+            <p><span>$ {product.price} </span></p> 
          </div>
       </div>
     )

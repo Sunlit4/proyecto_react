@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList';
 import Title from '../../components/Title';
 import './styles.css';
+import { collection, query, getDocs } from "firebase/firestore";
+import { db } from '../../firebase/config';
 
 const ItemListContainer = () => {
 
@@ -15,11 +17,20 @@ const ItemListContainer = () => {
 
         const getProductos = async () =>{
             try {
-                const response = await fetch('/mocks/data.json');
-                const data = await response.json();
-                console.log (data);
+                const q = query(collection(db, "products"));
+
+                const querySnapshot = await getDocs(q);
+                const productos = []
+                querySnapshot.forEach((doc) => {
+                    // doc.data() is never undefined for query doc snapshots
+                    //console.log(doc.id, " => ", doc.data());
+                    productos.push({id: doc.id, ...doc.data()})
+                    
+                });
+                console.log(productos)
+                
                 //filtro de las categorias
-                let productsFiltrados=[...data];
+                let productsFiltrados=[...productos];
                 if(params?.categoryId) {
                     productsFiltrados = productsFiltrados.filter(producto => producto.category === params.categoryId)
                 }
@@ -37,7 +48,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            <Title titulo='Welcome to Delux Online'/>
+            <Title titulo='Welcome to Green Lif'/>
             <h2 className="itemListContainerTitle">Products</h2>,
             {productos ? 
                 <ItemList products={productos} />
