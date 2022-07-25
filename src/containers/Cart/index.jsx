@@ -1,9 +1,12 @@
 import React from 'react'
 import { useContext } from 'react';
 import { Shop } from '../../context/ShopContext';
+import ordenGenerada from '../../utils/generarOrden';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaTrash } from 'react-icons/fa'
 import './styles.css';
+import guardarOrden from '../../utils/guardarOrden';
+
 
 
 const Cart = () => {
@@ -26,6 +29,15 @@ const Cart = () => {
         <Link to='/'>Continue Shopping</Link>
       </>
     );
+  }
+
+  const confirmarOrden = async () =>{
+    const orden = ordenGenerada ("Lara", "1175853040", "lara@gmail.com", cart, {total: totalPrice()})
+    guardarOrden (cart, orden)
+
+    // Add a new document with a generated id.
+    //const docRef = await addDoc(collection(db, "orders"), orden);
+    //console.log("Document written with ID: ", docRef.id);
   }
 
   return (
@@ -58,12 +70,13 @@ const Cart = () => {
                   </tr>
         })}
       </tbody>
+    </table>
       <>
         <h2>Total: {totalPrice()}</h2>
         <button className='btnCart' onClick={()=> clearCart ([])}> Clear cart </button>
         <button className='btnCart' onClick={handleTerminate}> Keep shopping </button>
+        <button className='btnCart' onClick={confirmarOrden}> Buy </button>
       </>
-    </table>
     </>
   )
 }
