@@ -3,7 +3,7 @@ El proyecto trata de un eCommerce. La idea es que la aplicación web permita sel
 
 ## Visualizar 🚀
 Para visualizar el sitio web se puede acceder al siguiente Deploy: https://project-react-ochre.vercel.app
-
+![React App](https://user-images.githubusercontent.com/92397918/183773571-68d587b7-044c-4ce3-ac5d-5be3919173ad.gif)
 
 ## Tecnologias 🛠️
 1. Interfaz realizada con ReactJs - Create React App
