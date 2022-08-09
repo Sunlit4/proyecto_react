@@ -1,8 +1,11 @@
-h1{
-    font-size: 50px;
-    color:#008e76 ;
-}
 .itemListContainerTitle{
     font-size: 40px;
-    color: rgb(93, 92, 94)
+    color:  #828282;
+}
+.loading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

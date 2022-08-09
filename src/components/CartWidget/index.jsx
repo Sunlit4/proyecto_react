@@ -2,6 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import {FaShoppingCart} from 'react-icons/fa';
 import { Shop } from '../../context/ShopContext';
+import Badge from '@mui/material/Badge'
 import './styles.css';
 
 const CartWidget = () => {
@@ -10,19 +11,20 @@ const CartWidget = () => {
 
     return (
         <div className="carrito">
-            <FaShoppingCart size={32} />
-            {cartWidgetItems()>0 ? (
-                <>
-                    {cartWidgetItems()}
-                </>
-            ) : (
-                <>
-                {''}
-                </> 
-            )
-        }
+            <Badge>
+                <FaShoppingCart size={32} />
+                {cart.length > 0 ? (
+                    <span className='cartItem'>
+                        {cartWidgetItems()}
+                    </span>
+                    ) : (
+                    <>
+                        {''}
+                    </> 
+                    )
+                }
+            </Badge>
         </div>
-        
     )
 }
 

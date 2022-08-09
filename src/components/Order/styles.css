@@ -1,0 +1,25 @@
+.titleOrder{
+    color: #34b7a7;
+    text-transform:uppercase;
+    font-size: 35px;
+}
+.dateOrder{
+    font-size: 15px;
+    color: rgb(223, 78, 78);
+    font-weight: bolder;
+}
+.orderInfo{
+    font-size: 20px;
+    color:rgb(93, 92, 94);
+}
+.tablaOrder{
+    color: rgb(93, 92, 94);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.linkOrder{
+    text-decoration: none;
+}

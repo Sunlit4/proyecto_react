@@ -4,8 +4,8 @@ import ItemDetail from '../../components/ItemDetail'
 import { useParams } from 'react-router-dom';
 import { doc, getDoc } from "firebase/firestore"
 import { db } from '../../firebase/config';
-
-
+import Swal from 'sweetalert2';
+import Loading from '../../components/Loading';
 
 const ItemDetailContainer = () => {
     const [productDetail, setProductDetail] = useState ({});
@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
                         console.log("No such document!");
                     }
                 } catch (error){
-                    console.log ('Hubo un error')
+                    Swal.fire ('Hubo un error' + error);
                 }     
             }
             getProductos()
@@ -39,7 +39,7 @@ const ItemDetailContainer = () => {
         <section className="gettingProducts">
             {Object.keys(productDetail).length !== 0 ? <ItemDetail product={productDetail}/> 
             : 
-            <p>Getting products...</p>}
+            <Loading/>}
         </section>
     )
 }

@@ -3,7 +3,11 @@
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color:#14a883;
+}
+.containerNavBar a.active {
+    transition: 0.1s;
+    color:  #e4e4e4;
+    background-color:  #173b5f ;
 }
 ul{
     list-style-type: none;
@@ -28,4 +32,7 @@ li a {
   
 li a:hover {
     background-color: #e4e4e4;
+}
+a {
+    text-decoration: none;
 }

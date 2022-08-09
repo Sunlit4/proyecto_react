@@ -1,23 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import CartWidget from '../CartWidget';
 import './styles.css';
 
 
-const NavBar = () => {
+const NavBar = ({condicion}) => {
 
     return (
-        <nav>
+        <div className={`${condicion === true ? "open" : ""} ${"containerNavBar"}`}>
             <ul>
-                <li className='logo'>{<Link to='/'>GREEN LIF</Link>}</li>
-                <li>{<Link to='/'>Home</Link>}</li>
-                <li>{<Link to='/category/facial'>Cuidado facial</Link>}</li>
-                <li>{<Link to='/category/bucal'>Cuidado bucal</Link>}</li>
-                <li>{<Link to='/category/capilar'>Cuidado capilar</Link>}</li>
-                <li>{<Link to='/category/hogar'>Hogar sustentable</Link>}</li>
-                <CartWidget/>
+                <li className='logo'>{<NavLink to='/'>GREEN LIF</NavLink>}</li>
+                <li>{<NavLink to='/'>Home</NavLink>}</li>
+                <li>{<NavLink to='/productos'>Productos</NavLink>}</li>
+                <li>{<NavLink to='/category/facial'>Cuidado facial</NavLink>}</li>
+                <li>{<NavLink to='/category/bucal'>Cuidado bucal</NavLink>}</li>
+                <li>{<NavLink to='/category/capilar'>Cuidado capilar</NavLink>}</li>
+                <li>{<NavLink to='/category/hogar'>Hogar sustentable</NavLink>}</li>
+                <NavLink to='/cart'><CartWidget/></NavLink>
             </ul>
-        </nav>
+        </div>
     )
 }
 

@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "picture": "https://i.ibb.co/Pc2vxL9/shamposolido1.jpg",
+        "image": "https://i.ibb.co/7pH2L0z/shampo.jpg",
         "title": "Shampo solido",
         "description": "Las propiedades del aceite de Argán nutren y revitalizan, brindando suavidad y nutrición extra para el cabello seco.  El aceite esencial de lavanda colabora combatiendo la resequedad y el frizz.",
         "category": "capilar",
@@ -10,7 +10,7 @@
     },
     {
         "id":2,
-        "picture": "https://i.ibb.co/c69WP9H/AGUA1.jpg",
+        "image": "https://i.ibb.co/c69WP9H/AGUA1.jpg",
         "title": "Agua Miceral",
         "description": "Las micelas equilibran el ph de la piel, tonificándola de manera inmediata; vas a sentir tu piel fresca y liviana. El agua de azahar aporta una acción regeneradora y astringente además de brindar un aroma delicioso.",
         "category": "facial",
@@ -19,7 +19,7 @@
     },
     {
         "id":3,
-        "picture": "https://i.ibb.co/nrr3y9V/cepillo1.jpg",
+        "image": "https://i.ibb.co/nrr3y9V/cepillo1.jpg",
         "title": "Cepillo de bambu",
         "description": "Tienen la misma vida útil que los cepillos de dientes convencionales. Sus cerdas están fabricadas a base de Nylon para asegurar una calidad óptima de lavado.  El tiempo recomendado de reemplazo del cepillo considerando un uso diario es de 2 a 3 meses.",
         "category": "bucal",
@@ -28,7 +28,7 @@
     },
     {
         "id":4,
-        "picture": "https://i.ibb.co/XFDJVq8/pads-4.jpg",
+        "image": "https://i.ibb.co/XFDJVq8/pads-4.jpg",
         "title": "Pads faciales",
         "description": "Los pads faciales cuentan con una cara de toalla y otra más suave de jersey; terminación con cinta bies.  Están confeccionados por un taller local y todos los materiales son 100% algodón.",
         "category": "facial",
@@ -37,7 +37,7 @@
     },
     {
         "id":5,
-        "picture": "https://i.ibb.co/x1zmxkt/BOLSAS-1.jpg",
+        "image": "https://i.ibb.co/x1zmxkt/BOLSAS-1.jpg",
         "title": "Bolsa granel",
         "description": "Pueden utilizarse para comprar alimentos por peso o sueltos en dietéticas, verdulerías, quioscos, panaderías, entre otros.  Son muy prácticas para comprar objetos sueltos por ejemplo en ferreterías, insumos de artesanías o bijou, o donde sea necesario algo para contener varios objetos sueltos.",
         "category": "hogar",
@@ -46,8 +46,8 @@
     },
     {
         "id":6,
-        "picture": "https://i.ibb.co/SJTSbkq/hilo-dental1.jpg",
-        "title": "Hilo dental biodegradable",
+        "image": "https://i.ibb.co/SJTSbkq/hilo-dental1.jpg",
+        "title": "Hilo dental Bio",
         "description": "Hilo biodegradable: PLA de origen vegetal. Vegano: encerado con cera de candelilla. Compostable en el hogar. Envase reutilizable y reciclable.",
         "category": "bucal",
         "stock": 10,
@@ -55,11 +55,83 @@
     },
     {
         "id":7,
-        "picture": "https://i.ibb.co/Yb4Cn1H/esponja-vegetal.jpg",
+        "image": "https://i.ibb.co/r0kY18x/esponja.jpg",
         "title": "Esponja vegetal",
         "description": "La esponja vegetal es el fruto de una planta, totalmente natural, biodegradable y compostable. Usos:  En la cocina:  Para lavar los platos como reemplazo de la esponja sintética. Para lavar papas, batatas, zuccinis, zanahorias, etc. En el baño:  Para usar en lugar de la esponja sintética. Posee propiedades exfoliantes. Como jabonera para el shampoo y acondicionador sólidos o para jabones.",
         "category": "hogar",
         "stock": 10,
         "price": 1430
+    },
+    {
+        "id": 8, 
+        "image": "https://i.ibb.co/4NPmVP7/bolsa.jpg",
+        "title": "TOTE BAG",
+        "description": "Bolsa de lienzo para hacer las compras y evitar las bolsas de plástico de un solo uso. Es una alternativa al plástico y además multiuso, para trasladar lo que necesites ",
+        "category": "hogar",
+        "stock": 10,
+        "price": 1700
+    },
+    {
+        "id": 9, 
+        "image": "https://i.ibb.co/1np2Ff6/cubiertos.jpg",
+        "title": "Cubiertos Bio",
+        "description": "Estos cuebiertos reutilizables, biodegradables y compostables 100% de caña, es el set perfecto para que tus días sean zero waste.Ideales para llevarlos a todos lados en tu cartera, bolso y usarlos en tu trabajo, picnic, viajes, vacaciones.",
+        "category": "hogar",
+        "stock": 10,
+        "price": 750
+    },
+    {
+        "id": 10, 
+        "image": "https://i.ibb.co/Y30WYgb/aceite-de-coco1.jpg",
+        "title": "Aceite de Coco",
+        "description": "El aceite de coco neutro es un maravilloso cosmético natural que hidrata y protege tu cabello. La vitamina E que contiene le da brillo y suavidad, sin dejar el pelo graso. Además, te protege la fibra capilar evitando la rotura de tu cabello y aportando fuerza. ",
+        "category": "capilar",
+        "stock": 10,
+        "price": 1120
+    },
+    {
+        "id": 11, 
+        "image": "https://i.ibb.co/7kST65j/balsamo.jpg",
+        "title": "Balsamo labial",
+        "description": "Balsamo natural hecho con manteca de cacao, cera vegana, aceite de coco, vitamina E y aceites ecenciales.Producto sin sulfatos, siliconas, parabenos y ningún derivado del pétroleo. Este balsamos es ideal para hidratar y reparar los labios dañados por el sol y el frío. La manteca de cacao tiene nutrientes y ácidos grasos grasos esenciales para evitar la sequedad. Es una gran fuente de antioxidantes naturales. La vitamina e es cicatrizante ayuda a reparar y proteger nuestra piel.",
+        "category": "facial",
+        "stock": 10,
+        "price": 900
+    },
+    {
+        "id": 12, 
+        "image": "https://i.ibb.co/mR9ckyn/aceite-almendras.jpg",
+        "title": "Aceite de almendras",
+        "description": "El aceite de almendra te ayudara a conseguir suavidad y brillo a tu cabello. Debido a los ácidos grasos como el omega-3 que tiene el aceite de almendras y a sus vitaminas A, B y E, y el magnesio, actúa sobre el pelo proporcionándole un shot de nutrición. Si tienes el pelo seco este aceite es un gran aliado  ",
+        "category": "capilar",
+        "stock": 10,
+        "price": 1120
+    },
+    {
+        "id": 13, 
+        "image": "https://i.ibb.co/1ZqKmpH/acondicionador.jpg",
+        "title": "Acondicionador solido",
+        "description": "Gracias a sus componentes naturales, como el aceite de jojoba, acondiciona, nutre, desenreda y humecta el cabello. Es biodegradable, vegano, cruelty free y libre de químicos, sulfatos y parabenos. Dependiendo de la duración de los lavados y el largo de tu cabello, la pastilla rinde entre 80 y 100 lavados.",
+        "category": "capilar",
+        "stock": 10,
+        "price": 1800
+    },
+    {
+        "id": 14, 
+        "image": "https://i.ibb.co/nD0qpgT/pasta-Dental.jpg",
+        "title": "Dentífrico en polvo",
+        "description": "Esta pasta dental limpia los dientes sin erosionar el esmalte, manteniéndolos libres de caries. Al ser en polvo, se aplica en tu cepillo de bambú junto al palito que viene junto con la pasta, se moja y se utiliza regularmente. Es antiséptica, desinflamante y apta para encías sensibles. Los aceites esenciales de menta y tea tree, eliminan las bacterias y dejan una agradable sensación de frescura en la boca.",
+        "category": "bucal",
+        "stock": 10,
+        "price": 900
+    },
+    {
+        "id": 15, 
+        "image": "https://i.ibb.co/34F6CWG/sorbete.jpg",
+        "title": "Sorbete de Acero",
+        "description": "¿Sabías cuanto tiempo tarda en degradarse un sorbete convencional? Entre 100 y 300 años, el plástico es uno de los materiales que más tarden en descomponerse. Estos sorbetes sustentables, son la alternativa para decirle chau al sorbete de plastico. Duraderos, reutilizables, inoxidables y amigables con el ambiente.Se pueden llevar siempre en la cartera, bolso o mochila y utilizar cuando ofrecen sorbetes de un solo uso. ",
+        "category": "bucal",
+        "stock": 10,
+        "price": 900
     }
 ] 
