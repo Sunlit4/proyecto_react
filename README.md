@@ -2,7 +2,7 @@
 El proyecto trata de un eCommerce. La idea es que la aplicación web permita seleccionar productos, navegar entre los productos filtrados por su categoría, agregarlos al carrito y poder acceder a ellos, para simular un compra. Obtiene sus productos a traves de Firebase
 
 ## Visualizar 🚀
-Para visualizar el sitio web se puede acceder al siguiente Deploy: https://project-react-ochre.vercel.app
+Para visualizar el sitio web se puede acceder al siguiente Deploy: https://project-react-9ikb6kl5x-sunlit4.vercel.app/
 ![React App](https://user-images.githubusercontent.com/92397918/183773571-68d587b7-044c-4ce3-ac5d-5be3919173ad.gif)
 
 ## Tecnologias 🛠️
