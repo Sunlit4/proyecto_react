@@ -1,4 +1,4 @@
-# E-Commerce | Proyecto creado con React <hr>
+# E-Commerce | Proyecto creado con React 
 El proyecto trata de un eCommerce. La idea es que la aplicación web permita seleccionar productos, navegar entre los productos filtrados por su categoría, agregarlos al carrito y poder acceder a ellos, para simular un compra. Obtiene sus productos a traves de Firebase
 
 ## Visualizar 🚀

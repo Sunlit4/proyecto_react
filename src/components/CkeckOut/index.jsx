@@ -106,19 +106,20 @@ const Form = ({ setShowForm, confirmarOrden, setShowCart }) =>{
                     })}
                 />
                 <p>{errors.address?.message}</p>
-                
-            </form>
-            <>
-                    <button onClick={(e)=>{
+                <>
+                <button onClick={(e)=>{
                         cancelar(e)
                         setShowCart(true)
                     }}>
                         Cancelar
-                    </button>
-                    <button type="submit">
-                        Finalizar la compra
-                    </button>
+                </button>
+                <button type="submit">
+                    Finalizar la compra
+                </button>
                 </>
+                
+            </form>
+          
         </div>
     )
 }
